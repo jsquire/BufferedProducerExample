@@ -1,0 +1,25 @@
+﻿@{
+  ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+  <h1 class="display-4">Telemetry Publishing Example</h1>
+  <p>Clicking on any of the controls below will cause an API request that triggers a telemetry event being sent to Event Hubs.</p>
+
+  <hr class="spacer" />
+  <div>
+    <button id="trackingButton" data-telemetry="click">I'm a button</button>
+  </div>
+  <hr class="spacer" />
+  <div>
+    <button id="secondButton" data-telemetry="click">Look! A second button</button>
+    <select id="dropDownList" data-telemetry="change">
+      <option disabled hidden selected value="">No Selection</option>
+      <option value="1">First</option>
+      <option value="2">Second</option>
+      <option value="3">Third</option>
+      <option value="4">Fourth</option>
+      <option value="5">Fifth</option>
+    </select>
+  </div>
+</div>
