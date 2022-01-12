@@ -50,6 +50,7 @@ namespace BufferedProducerUserTelemetry
         /// </summary>
         ///
         /// <param name="logger">The logger instance to set.</param>
+        ///
         public void SetLogger(ILogger logger) => _logger = logger;
 
         /// <summary>
